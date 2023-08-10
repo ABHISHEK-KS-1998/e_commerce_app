@@ -11,15 +11,15 @@ class LoginPage extends StatelessWidget {
           child: Column(
             children: [
               Padding(
-                padding: EdgeInsets.only(left: 60, right: 60, top: 50),
+                padding: const EdgeInsets.only(left: 60, right: 60, top: 50),
                 child: Image.asset("images/loginpage.png"),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 80,
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                padding: EdgeInsets.symmetric(horizontal: 15),
+                margin: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 height: 55,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -33,16 +33,16 @@ class LoginPage extends StatelessWidget {
                     ]),
                 child: Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.person,
                       size: 30,
                       color: Colors.black54,
                     ),
-                    SizedBox(width: 20),
-                    Container(
+                    const SizedBox(width: 20),
+                    SizedBox(
                       width: 250,
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                             border: InputBorder.none,
                             hintText: "Enter Username"),
                       ),
@@ -50,12 +50,12 @@ class LoginPage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 20),
-                padding: EdgeInsets.symmetric(horizontal: 15),
+                margin: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 height: 55,
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -69,16 +69,16 @@ class LoginPage extends StatelessWidget {
                     ]),
                 child: Row(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.lock,
                       size: 30,
                       color: Colors.black54,
                     ),
-                    SizedBox(width: 20),
-                    Container(
+                    const SizedBox(width: 20),
+                    SizedBox(
                       width: 250,
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                             border: InputBorder.none,
                             hintText: "Enter Password"),
                       ),
@@ -86,43 +86,43 @@ class LoginPage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Container(
-                margin: EdgeInsets.only(left: 15),
+                margin: const EdgeInsets.only(left: 15),
                 alignment: Alignment.centerLeft,
                 child: TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     "Forget Password",
                     style: TextStyle(
                         fontWeight: FontWeight.w500, color: Colors.black87),
                   ),
                 ),
               ),
-              SizedBox( height: 30),
+              const SizedBox( height: 30),
               InkWell(
                 onTap: () {
                   Navigator.pushNamed(context, "HomePage");
                 },
                 child: Container(
                   alignment: Alignment.center,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
-                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  margin: const EdgeInsets.symmetric(horizontal: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
                   height: 55,
                   width: double.infinity,
                   decoration: BoxDecoration(
-                      color: Color(0xFF475269),
+                      color: const Color(0xFF475269),
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: [
                         BoxShadow(
-                          color: Color(0xFF475269).withOpacity(0.3),
+                          color: const Color(0xFF475269).withOpacity(0.3),
                           blurRadius: 5,
                           spreadRadius:1,
                         )
                       ]),
-                  child: Text(
+                  child: const Text(
                     "Sign In",
                     style: TextStyle(
                         fontSize: 20,
@@ -131,11 +131,11 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               Row(mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "Dont Have Account? - ",
+                    "Don't Have Account? - ",
                     style: TextStyle(
                       color: Colors.black.withOpacity(0.8),
                       fontSize: 16,
@@ -143,7 +143,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   TextButton(
                       onPressed: (){},
-                      child: Text(
+                      child: const Text(
                         "Sign Up", style: TextStyle(
                         color: Color(0xFF475269),
                         fontSize: 18,

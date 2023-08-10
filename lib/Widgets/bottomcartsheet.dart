@@ -67,7 +67,7 @@ class BottomCartSheet extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Nike Shoe",
                                   style: TextStyle(
                                     color: Color(0xFF475269),
